@@ -1,0 +1,8 @@
+HTML = structure of the website
+CSS = styling the website
+JS = functionalty to the website
+
+what is index.html: landing page
+    standerd file name for a website homepage
+    index.html is the defult page
+
