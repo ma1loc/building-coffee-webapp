@@ -139,3 +139,18 @@ A tag to create a basic table with help of another another tags like
 `<tr> </tr>` -> create a table row
 `<th> </th>` -> create a horizntal row table
 `<td> </td>` -> create a table data to each single row
+
+### `<span> </span>`
+is a tag that group and apply style or somthing else to a specific portion of text
+
+### `<div> </div>`
+is a tag that looks same like `span` tag, div it apply some thing 
+
+### `<iframe> </iframe>`
+is a tag that req a path or website to show up on your web site, used to make an ads
+
+### `<button> </button>`
+is a tag that make use a button for a link or what even
+
+ ### `<form> </form>`
+ 
