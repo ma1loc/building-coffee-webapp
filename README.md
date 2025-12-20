@@ -91,3 +91,51 @@ This tag is for audio. Looks like this:
 ```
 
 ---
+
+### `<vidoe> </vidoe> `
+A tag to vidoe noting else same options as before like <audio>
+
+### `<b> </b>`
+A tag for boldeing a text of <p>
+
+### `<i> </i>`
+A tag for itelic text <p>
+
+### `<big> </big>`
+A tag for big text <p>
+
+### `<small> </small>`
+A tag for small text <p>
+
+### `<sub> </sub>`
+A tag for subscripte text <p>
+
+### `<sup> </sup>`
+A tag for supscripte text <p>
+
+### `<ins> </ins>`
+A tag for insert a line to text <p>
+
+### `<del> </del>`
+A tag for delete line to text <p>
+
+### `<mark> </mark>`
+A tag for mark text <p>
+
+### `<ul> </ul>`
+A tag for unorderd list
+
+### `<ol> </ol>`
+A tag for orderd list with opeiton type to define the orderd type
+
+### `<dt> </dt>`
+A tag for description term
+
+### `<dd> </dd>`
+A tag for description difination
+
+### `<table> </table>`
+A tag to create a basic table with help of another another tags like
+`<tr> </tr>` -> create a table row
+`<th> </th>` -> create a horizntal row table
+`<td> </td>` -> create a table data to each single row
