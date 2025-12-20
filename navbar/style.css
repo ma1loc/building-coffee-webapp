@@ -1,0 +1,38 @@
+/* THEME
+	-> red =  B80000.
+	-> white.
+	-> black.
+*/
+
+body{
+	margin: 0px;
+	font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.navbar ul{
+	list-style-type: none;
+	background-color: #8b0000;
+	padding: 0px;
+	margin: 0px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.navbar li{
+	margin: 0 20px;
+}
+
+.navbar a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;	/* remove the underline from the text*/
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: inherit;
+	/* font-weight: bold; */
+}
+
+.logo {
+    height: 50px; /* logo size */
+    margin-right: 30px;
+}
