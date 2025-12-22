@@ -4,6 +4,16 @@
 	-> black.
 */
 
+/* Futuers to add
+	Dark-mode
+	Responsive
+	back-end
+*/
+
+/* Problems that i FACE
+	the clickable area is bigger than the image (website logo)
+*/
+
 body{
 	margin: 0px;
 	font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -12,39 +22,113 @@ body{
 .navbar {
     background-color: #ffffff;
     height: 100px;
-    display: flex;
+    display: flex;	/* what is this done ? */
     align-items: center; /* vertical center */
-    padding: 0 20px;
+    padding: 0 20px; /* what is this done ?*/
 
-	/* box-shadow: 0 0.005cm 5px rgba(0, 0, 0, 0.25); */
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+/* ----------------------------------------------------- */
+
+.nav_logo {
+    display: inline-block; /* done nothing ? */
+    margin-left: 100px;	/* hardcoded */
+    margin-right: 30px; /* hardcoded */
+    padding: 0; /* done nothing ? */
+    /* background-color: #000000; */
+}
+
 .logo {
-    /* height: 50px; */
-    height: 50px; /* logo size */
-    margin-right: 30px;
-	/* left: 50px;
-	right: 50px; */
-	cx: 31;
-	cy: 31;
-	display: inline;
+	user-select: none;
+    display: block;	/* done what ? */
+    height: 45px;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+/* ----------------------------------------------------- */
+
+.menu li {
+    margin: 0 20px; /* gap size hardcoded here */
 }
 
-.navbar li {
-    margin: 0 20px;
+.menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
-.navbar a {
-    color: black;
+/* ---------- Navbar menu ---------- */
+
+.menu a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 650;        /* semi-bold */
+    font-size: 16px;         /* adjust as needed */
     text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;     /* spacing between letters */
+
+	position: relative;       /* needed for the sliding line */
 }
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;                     /* start hidden */
+    height: 3px;                  /* thickness of the line */
+    bottom: -5px;                 /* distance from the text */
+    left: 0;                      /* start from left */
+    background-color: #B80000;    /* red color */
+    /* transition: width 0.3s ease;  smooth animation */
+	transition: width 0.3s ease;  /* smooth slide from left to right */
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* --------------- sign_in-button --------------- */
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Sign in button */
+.btn-signin {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn-signin:hover {
+    background: #e7e7e7;
+}
+
+/* Join now button */
+.btn-join {
+    background: #000;
+    color: #fff;
+}
+
+.btn-join:hover {
+    background: #333;
+}
+
+.find {
+	margin-left: auto;
+	display: flex;
+	/* align-items: center; */
+	gap: 10px;
+}
+
+/* find us */
