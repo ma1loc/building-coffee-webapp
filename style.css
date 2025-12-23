@@ -73,7 +73,7 @@ body{
 }
 
 .menu a::after {
-    content: "";
+    /* content: ""; */
     position: absolute;
     width: 0;                     /* start hidden */
     height: 3px;                  /* thickness of the line */

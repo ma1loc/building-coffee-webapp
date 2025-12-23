@@ -4,7 +4,11 @@
 
 ### Live Deployment
 You can check the website deployed on **GitHub Pages** here:
-<a href="https://ma1loc.github.io/building-coffee-webapp/"  target="_blank"> here </a>
+<a href="https://ma1loc.github.io/building-coffee-webapp/"
+   target="_blank"
+   rel="noopener noreferrer">
+   here
+</a>
 
 ---
 
