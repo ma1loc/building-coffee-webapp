@@ -4,7 +4,8 @@
 
 ### Live Deployment
 You can check the website deployed on **GitHub Pages** here:
-[View Live Site](https://ma1loc.github.io/building-coffee-webapp/)
+<a href="https://ma1loc.github.io/building-coffee-webapp/"  target="_blank"> here </a>
+
 ---
 
 ## What I Currently Learned
