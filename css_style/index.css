@@ -1,0 +1,52 @@
+/* only needed in case of using 'ul' 'li'  */
+/* text-decoration: none;
+list-style: none; */
+
+/* what is need to know */
+/*	
+	margin
+	padding
+
+	".name" -> name is a class
+	"name" -> is a HTML tag
+*/
+
+
+
+/* correct */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar {
+	height: 100px;
+	background-color: red;
+	padding: 0 250px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 300px;
+
+	font-family: "Poppins", sans-serif;
+}
+
+.menu ul {
+	display: flex;
+	gap: 30px;
+}
+
+.button {
+	display: flex;
+	gap: 15px;
+}
