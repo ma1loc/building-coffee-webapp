@@ -16,28 +16,40 @@
 	<!-- fonts -->
 	<!-- Fonts (Menu Narbar) -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <!-- body -> build the structuer -->
 <body>
-	<!-- parent div box for navbar -->
-	<div class="navbar">
-		<!-- menu -->
-		<div class="menu">
-			<ul>
-				<li><a href="#"> menu </a></li>
-				<li><a href="#"> rewards </a></li>
-				<li><a href="#"> gift cards</a></li>
-			</ul>
+	<div class="navbar-wrapper">
+		<div class="navbar">
+			
+			<a class="nav_logo" href="index.html">
+				<img src="./imgs/favicon.png">
+			</a>
+			<div class="menu">
+				<ul class="nav_items">
+					<li class="menu">
+						<a href="#"> menu </a>
+					</li>
+					<li class="rewards">
+						<a href="#"> rewards </a>
+					</li>
+					<li class="gift_cards">
+						<a href="#"> gift cards </a>
+					</li>
+				</ul>	
+			</div>
+			<div class="buttons">
+				<a href="#" class="sign_btn">
+					<button> Sign in </button>
+				</a>
+				<a href="#" class="join_btn">
+					<button> Join now </button>
+				</a>
+			</div>
 		</div>
-		<!-- buttons "sign-in, join now" -->
-		<div class="button">
-			<button class="sign_btn"> Sign in </button>
-			<button class="join_btn"> Join now </button>
-		</div>
-
 	</div>
 </body>
-
 
 </html>
