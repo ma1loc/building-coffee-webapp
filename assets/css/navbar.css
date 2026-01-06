@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-/* >>> navbar */
+/* >>> header style <<< */
 .navbar {
     display: flex;
     height: 100px;
@@ -65,6 +65,12 @@
     background-color: black;
 }
 
+.navbar .menu ul, li a:hover {
+    color: #B40000;
+}
+
+/* hovering */
+
 .navbar .navbar_btns .sign_btn:hover {
     background-color: #E0E0E0;
 }
@@ -73,26 +79,35 @@
     background-color: #333333;
 }
 
-/* >>> get an order */
-.get_order {
+/* >>> main <<< */
+
+/* <<< to solve */
+main > * {
+    margin-bottom: 30px; /* pushes */
+}
+
+main {
+    margin: 0 250px;
+}
+
+.get-order {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
-    margin: 0 250px;
     background-color: #B40000;
 
     gap: 20px;
 }
 
-.get_order p {
+.get-order p {
     color: white;
     font-size: 19px;
     font-weight: 600;
     font-family: Montserrat, sans-serif;
 }
 
-.get_order .start_order_btn a {
+.get-order .start_order_btn a {
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -103,6 +118,24 @@
     text-decoration: none;
 }
 
-.get_order .start_order_btn a:hover {
+.get-order .start_order_btn a:hover {
     background-color: #ff0000;
+}
+
+/* img -> make it responsive too */
+
+main .promo-row .promo-image * {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+main .promo-row .promo-content {
+    display: flex;
+    
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: green;
 }
