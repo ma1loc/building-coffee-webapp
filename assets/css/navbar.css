@@ -80,14 +80,12 @@
 }
 
 /* >>> main <<< */
-
-/* <<< to solve */
 main > * {
-    margin-bottom: 30px; /* pushes */
+    margin-bottom: 25px; /* pushes */
 }
 
 main {
-    margin: 0 250px;
+    margin: 0 10%;
 }
 
 .get-order {
@@ -120,22 +118,4 @@ main {
 
 .get-order .start_order_btn a:hover {
     background-color: #ff0000;
-}
-
-/* img -> make it responsive too */
-
-main .promo-row .promo-image * {
-    width: 50%;
-    height: auto;
-    float: left;
-}
-
-main .promo-row .promo-content {
-    display: flex;
-    
-    padding: 5%;
-    flex-direction: column;
-    justify-content: center;
-
-    background-color: green;
 }
