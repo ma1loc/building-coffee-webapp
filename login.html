@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account sign in: Coffeebucks</title>
+
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.svg">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- page content section -->
+    <main class="login-page">
+        <div class="sign-msg">
+            <p> Sign in or create an account </p>
+        </div>
+        <div class="sign-in">
+            <div class="sign-in-box">
+                <!-- asterisk -->
+                <p class="required-field-msg">
+                    <span class="red-asterisk"> * </span> indicates required field
+                </p>
+                <!-- take input from user -->
+                <form action="#" method="POST" class="login-form" novalidate>
+                    <div class="input-group">
+                        <label for="user-email"></label>
+                        <input type="email" id="user-email" name="email" placeholder="Username or email address" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="user-pass"></label>
+                        <input type="password" id="user-pass" name="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="keep-me-signed-in">
+                            <input type="checkbox" id="scales" name="scales" checked />
+                            <label for="scales"><p>Keep me signed in.</p></label>
+                            <button class="details-msg-btn"> Details </button>
+                    </div>
+
+                    <div class="btn-box">
+                        <button type="submit" class="login-btn">Sign in</button>
+                    </div>
+                </form>
+                <!-- end -->
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
