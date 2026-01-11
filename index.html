@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Coffeebucks</title>	
-    <link rel="icon" type="image/png" href="./images_resource/favicon.png">
-	<link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeebucks</title>
 
-	<!-- Fonts (Menu Narbar) -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="icon" href="assets/images/fav_icon.png" type="image/png">
+    
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/promo-row.css">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
-</head>
-
-
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <body>
+    <!-- >> header << -->
+    <header>
+        <!-- logo div -->
+        <div class="navbar">
+            <div class="logo" alt="logo">
+                <a href="#">
+                    <img src="assets/images/logo.svg">
+                </a>
+            </div>
+            <!-- menu div -->
+            <div class="menu">
+                <ul>
+                    <li> <a href="index.html"> home </a> </li>
+                    <li> <a href="#"> menu </a> </li>
+                    <li> <a href="#"> about </a> </li>
+                </ul>
+            </div>
+            <!-- btns -->
+            <div class="navbar_btns">
+                <a class="sign_btn" href="login.html"> sign in </a>
+                <a class="join_btn" href="join-now.html"> join now </a>
+            </div>
+        </div> 
+    </header>
 
-	<navbar class="navbar">
-		<!-- website logo -->
-		<a href="index.html" class="nav_logo">
-    		<img src="./images_resource/favicon.png" alt="Site logo" class="logo">
-		</a>
-
-		<!-- navigation bar -->
-		<ul class="menu">
-			<li><a href="#">Menu</a></li>
-			<li><a href="#">Rewards</a></li>
-			<li><a href="#">Gift Cards</a></li>
-		</ul>
-
-		<div class="find">
-			<a href="#" class="find_store">Find a store</a>
-			<i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-		</div>
-
-		<!-- Buttons -->
-		<div class="nav-buttons">
-			<a href="#" class="btn btn-signin">Sign in</a>
-			<a href="#" class="btn btn-join">Join now</a>
-		</div>
-
-	</navbar>
-
-
+    <main>
+        <!-- new get order div -->
+        <section class="get-order">
+            <p> It's a great day for coffee </p>
+            <div class="start_order_btn">
+                <a href="#"> Start an order </a>
+            </div>
+        </section>
+        
+        <!-- sections -->
+        <section class="promo-row">
+            <div class="promo-image">
+                <img src="assets/images/example1.jpg">
+            </div>
+            <div class="promo-content">
+                <h5>A little bite, a lot of good</h5>
+                <p> For every purchase of Crispy Grilled Cheese on Sourdough at participating locations,
+                    we'll donate the value of two school meals** to support programs that feed kids.
+                    Together we’ll build a brighter future.
+                </p>
+                <div class="order-btn">
+                    <a href="#"> Order now </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 

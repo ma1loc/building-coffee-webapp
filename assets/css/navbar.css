@@ -1,0 +1,81 @@
+/* based color B40000 */
+
+* {
+    /* why ? */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* >>> header style <<< */
+.navbar {
+    display: flex;
+    height: 100px;
+    align-items: center;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .menu ul, li a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    padding: 0 20px;
+    gap: 10px;
+
+}
+
+.navbar .logo img {
+    height: 50px;
+    padding: 0 80px;
+    cursor: pointer;
+}
+
+.navbar .navbar_btns {
+    display: flex;
+    margin-left: auto;
+    padding: 0 10%;
+    gap: 20px;
+    
+}
+
+.navbar .navbar_btns .sign_btn, .join_btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar .navbar_btns .sign_btn {
+    color: black;
+    background-color: white;
+}
+
+.navbar .navbar_btns .join_btn {
+    color: white;
+    background-color: black;
+}
+
+.navbar .menu ul, li a:hover {
+    color: #B40000;
+}
+
+/* hovering */
+
+.navbar .navbar_btns .sign_btn:hover {
+    background-color: #E0E0E0;
+}
+
+.navbar .navbar_btns .join_btn:hover {
+    background-color: #333333;
+}
+

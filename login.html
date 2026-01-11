@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account sign in: Coffeebucks</title>
+
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="icon" href="assets/images/fav_icon.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet"> 
+    
+    <script src="assets/js/login_input_validation.js" defer ></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.svg">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- page content section -->
+    <main class="login-page">
+        <div class="sign-msg">
+            <p> Sign in or create an account </p>
+        </div>
+
+        <div class="box">
+			<div class="sign-in-box">
+				<form action="#" method="POST" class="login-form" novalidate>
+					<p class="required-field-msg">
+						<span class="red-asterisk"> * </span> indicates required field
+					</p>
+
+					<div class="input-group">
+						<!-- describes what an input field is for -->
+						<label id="label-mail" for="user-email"> <span> * </span> Username or email address </label>
+						<input type="email" id="user-email" name="email" required>
+					</div>
+
+					<div class="input-group">
+						<!-- describes what an input field is for -->
+						<label id="label-password" for="user-pass"> <span> * </span> Password </label> 
+						<input type="password" id="user-pass" name="password" required>
+					</div>
+					
+					<!-- to check latter -->
+					<div class="keep-me-signed-in">
+							<input type="checkbox" id="scales" name="scales" checked />
+							<label for="scales"><p>Keep me signed in.</p></label>
+							<button class="details-msg-btn"> Details </button>
+					</div>
+					<div class="password_recovery"><script src="input_validation.js" defer></script>
+
+						<a href="#">Forgot your username?</a>
+						<a href="#">Forgot your password?</a>
+					</div>
+					<button type="submit" class="sign-in">Sign in</button>	
+				</form>
+				<!-- end -->
+			</div>
+        </div>
+		<div class="join-now-box">
+			<div class="join-now">
+				<h2> Join Coffeebucks® Rewards </h2>
+				<p> As a member, start earning free food and drinks, unlock our best offers and celebrate your birthday with a treat from us. Best of all, it's free to join. </p>
+				<a href="join-now.html">
+					<button class="join-now-btn"> Join now </button>
+				</a>
+			</div>
+		</div>
+    </main>
+</body>
+</html>
