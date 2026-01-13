@@ -50,7 +50,7 @@ header .navbar .navbar_logo img {
 	display: flex;
 	padding: 32px;
 	width: 500px;
-	min-height: 500px;
+	height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 10px hsl(0deg 0% 0% / 0.3);
 }
@@ -58,11 +58,9 @@ header .navbar .navbar_logo img {
 .sign-in-box {
 	display: flex;
 	width: 100%;
-	min-height: 436px;
+	height: auto;
 	flex-direction: column;
 }
-
-
 
 .red-asterisk {
     color: #b40000;
@@ -76,7 +74,7 @@ header .navbar .navbar_logo img {
 }
 
 .sign-in-box .input-group {
-    margin: 25px 0;
+    margin-top: 25px;
 }
 
 .sign-in-box .input-group input {
@@ -88,6 +86,7 @@ header .navbar .navbar_logo img {
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-family: SoDo Sans SemiBold, sans-serif;
+    background-color: transparent;
 }
 
 .keep-me-signed-in * {
@@ -127,6 +126,8 @@ header .navbar .navbar_logo img {
 }
 
 .login-form {
+    display: flex;
+    flex-direction: column;
 	position: relative;
 	height: 100%;
 }
@@ -136,14 +137,13 @@ header .navbar .navbar_logo img {
     color: white;
     background-color: #b40000;
     border: none;
+    width: fit-content;
     border-radius: 30px;
     font-size: large;
     font-weight: bold;
     padding: 18px 24px;
-	right: 0;
-	bottom: 0;
 	margin: 10px;
-	position: absolute;
+    align-self: flex-end;
     font-family: SoDo Sans SemiBold, sans-serif;
     box-shadow: 0 5px 10px hsl(0deg 0% 0% / 0.3);
 }
@@ -156,7 +156,6 @@ header .navbar .navbar_logo img {
     justify-content: center;
     padding: 32px 32px;
     text-align: center;
-    /* background-color: red; */
 }
 
 .join-now {
@@ -203,3 +202,24 @@ header .navbar .navbar_logo img {
 .input-group label span {
 	color: #b40000;
 }
+
+/* Dynamic Form Validation style */
+.error-msg {
+    display: none;
+}
+
+.error-msg .error_box {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    color: #b40000;
+    font-family: "SoDo Sans SemiBold", sans-serif;
+}
+
+.error-msg img {
+    margin-right: 5px;
+    width: 20px;
+}
+/* ---------------------------------- */
+

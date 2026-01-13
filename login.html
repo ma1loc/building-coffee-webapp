@@ -45,12 +45,26 @@
 						<!-- describes what an input field is for -->
 						<label id="label-mail" for="user-email"> <span> * </span> Username or email address </label>
 						<input type="email" id="user-email" name="email" required>
+						<!-- Dynamic Form Validation message -->
+						<div class="error-msg" id="mail-error-msg">
+							<div class="error_box">
+								<img src="assets/images/at-solid-full.svg">
+								<span> Enter an email/username. </span>
+							</div>
+						</div>
 					</div>
 
 					<div class="input-group">
 						<!-- describes what an input field is for -->
 						<label id="label-password" for="user-pass"> <span> * </span> Password </label> 
 						<input type="password" id="user-pass" name="password" required>
+						<!-- Dynamic Form Validation message -->
+						<div class="error-msg" id="pass-error-msg">
+							<div class="error_box">
+								<img src="assets/images/key-solid-full.svg">
+								<span> Enter a password. </span>
+							</div>
+						</div>
 					</div>
 					
 					<!-- to check latter -->
@@ -59,12 +73,11 @@
 							<label for="scales"><p>Keep me signed in.</p></label>
 							<button class="details-msg-btn"> Details </button>
 					</div>
-					<div class="password_recovery"><script src="input_validation.js" defer></script>
-
+					<div class="password_recovery">
 						<a href="#">Forgot your username?</a>
 						<a href="#">Forgot your password?</a>
 					</div>
-					<button type="submit" class="sign-in">Sign in</button>	
+					<button type="submit" id="huhu" class="sign-in">Sign in</button>	
 				</form>
 				<!-- end -->
 			</div>
