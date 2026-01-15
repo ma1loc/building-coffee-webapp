@@ -1,50 +1,68 @@
-/* based color B40000 */
-
 * {
-    /* why ? */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* >>> header style <<< */
 .navbar {
     display: flex;
-    height: 100px;
-    align-items: center;
+    height: 10vw;
+    min-height: 72px;
+    max-height: 100px;
+    width: auto;
 
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* background-color: greenyellow; */
 }
 
-.navbar .menu ul, li a {
+/* ------------------------------------------------------ */
+
+.left-nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav-items .menu ul{
     display: flex;
     list-style: none;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Montserrat, sans-serif;
-    text-transform: uppercase;
     color: black;
-    padding: 0 20px;
-    gap: 10px;
-
+    gap: 50px;
 }
 
-.navbar .logo img {
-    height: 50px;
-    padding: 0 80px;
-    cursor: pointer;
+.left-nav-items .menu a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.navbar .navbar_btns {
+.left-nav-items .logo {
     display: flex;
-    margin-left: auto;
-    padding: 0 10%;
-    gap: 20px;
+    align-items: center;
     
+    height: 10vw;
+    min-height: 72px;
+    max-height: 100px;
+    width: 100px;
 }
 
-.navbar .navbar_btns .sign_btn, .join_btn {
+.left-nav-items .logo img {
+    width: 5vw;
+    min-width: 40px;
+    max-width: 50px;
+}
+
+.right-nav-items .navbar-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.right-nav-items .navbar-btns .sign-btn, .join-btn {
     padding: 5px 10px;
     text-decoration: none;
     font-size: 14px;
@@ -53,29 +71,48 @@
     border-radius: 30px;
     border: 1px solid rgb(0, 0, 0);
     font-family: Montserrat, sans-serif;
+
 }
 
-.navbar .navbar_btns .sign_btn {
+.navbar .navbar-btns .sign-btn {
     color: black;
     background-color: white;
 }
 
-.navbar .navbar_btns .join_btn {
+.navbar .navbar-btns .join-btn {
     color: white;
     background-color: black;
 }
 
-.navbar .menu ul, li a:hover {
+
+/* buttons hovering style */
+.left-nav-items .menu a:hover {
     color: #B40000;
 }
 
-/* hovering */
-
-.navbar .navbar_btns .sign_btn:hover {
+.right-nav-items .navbar-btns .sign-btn:hover {
     background-color: #E0E0E0;
 }
 
-.navbar .navbar_btns .join_btn:hover {
+.right-nav-items .navbar-btns .join-btn:hover {
     background-color: #333333;
 }
 
+/* Device Type,Max-Width,What happens? */
+/* Mobile (Phones),480px,Everything is 1 column. Font sizes get slightly smaller.
+Tablets (Portrait),768px,Items might go from 1 column to 2. Navbar might hide.
+Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
+
+@media (max-width: 768px) {
+    .navbar .right-nav-items {
+        display: none;
+    }
+    .navbar .left-nav-items .menu{
+        display: none;
+    }
+
+    .
+
+
+
+}
