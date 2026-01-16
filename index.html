@@ -9,6 +9,8 @@
     <!-- icon -->
     <link rel="icon" href="assets/images/fav_icon.png" type="image/png">
     
+	<!-- root css config varables -->
+	<link rel="stylesheet" href="assets/css/variables.css">
     <!-- css stylesheets -->
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/promo-row.css">
@@ -17,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet"> 
+
+	<!-- JS -->
+	<!-- ........ -->
 </head>
 
 <body>
@@ -28,7 +33,7 @@
         <div class="left-nav-items">
             <!-- logo div -->
             <div class="logo" alt="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="assets/images/logo.svg">
                 </a>
             </div>
@@ -49,9 +54,33 @@
                 <a class="join-btn" href="join-now.html"> join now </a>
             </div>
         </div>
+
+		<!-- Hamburger Menu Button -->
+		<!-- <div class="sidebar-button">
+			<img src="assets/images/hamburger-menu-icon.svg">
+		</div> -->
+		<div class="sidebar-button" id="menuBtn">
+			<img src="assets/images/hamburger-menu-icon.svg">
+		</div>
     </header>
 
-    <main>
+	<!-- sidebar Menu -->
+	<!--------------------------------------------------------->
+	<div class="menu mobile-sidebar">
+		<ul>
+			<li> <a href="index.html"> home </a> </li>
+			<li> <a href="#"> menu </a> </li>
+			<li> <a href="#"> about </a> </li>
+		</ul>
+		<hr class="sidebar-divider">
+		<div class="mobile-navbar-btns">
+			<a class="sign-btn" href="login.html"> sign in </a>
+			<a class="join-btn" href="join-now.html"> join now </a>
+		</div>
+	</div>
+	<!--------------------------------------------------------->
+    
+	<main>
         <!-- new get order div -->
         <section class="get-order">
             <p> It's a great day for coffee </p>
@@ -77,6 +106,15 @@
             </div>
         </section>
     </main>
+
+	<script>
+		const menuBtn = document.getElementById('menuBtn');
+		const sideMenu = document.querySelector('.mobile-sidebar');
+
+		menuBtn.addEventListener('click', () => {
+			sideMenu.classList.toggle('open');
+		});
+	</script>
 
 </body>
 
