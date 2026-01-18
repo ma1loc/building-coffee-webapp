@@ -25,42 +25,43 @@
 </head>
 
 <body>
+	<!-- preloader -->
+	<div id="preloader" class="preloader"></div>
+
     <!-- >> header << -->
     <header class="navbar">
         <!-- menu div -->
         <!-- here will create the navbar content by slip 'left-nav-items' && 'right-nav-items' -->
-        
-        <div class="left-nav-items">
-            <!-- logo div -->
-            <div class="logo" alt="logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.svg">
-                </a>
-            </div>
-            
-            <div class="menu">
-                <ul>
-                    <li> <a href="index.html"> home </a> </li>
-                    <li> <a href="#"> menu </a> </li>
-                    <li> <a href="#"> about </a> </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="right-nav-items">
-            <!-- btns -->
-            <div class="navbar-btns">
-                <a class="sign-btn" href="login.html"> sign in </a>
-                <a class="join-btn" href="join-now.html"> join now </a>
-            </div>
-        </div>
+        <div class="navbar-container">
+			<div class="left-nav-items">
+				<!-- logo div -->
+				<div class="logo" alt="logo">
+					<a href="index.html">
+						<img src="assets/images/logo.svg">
+					</a>
+				</div>
+				
+				<div class="menu">
+					<ul>
+						<li> <a href="index.html"> home </a> </li>
+						<li> <a href="#"> menu </a> </li>
+						<li> <a href="#"> about </a> </li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="right-nav-items">
+				<!-- btns -->
+				<div class="navbar-btns">
+					<a class="sign-btn" href="login.html"> sign in </a>
+					<a class="join-btn" href="join-now.html"> join now </a>
+				</div>
+			</div>
 
-		<!-- Hamburger Menu Button -->
-		<!-- <div class="sidebar-button">
-			<img src="assets/images/hamburger-menu-icon.svg">
-		</div> -->
-		<div class="sidebar-button" id="menuBtn">
-			<img src="assets/images/hamburger-menu-icon.svg">
+			<!-- Hamburger Menu Button -->
+			<div class="sidebar-button" id="menu-btn">
+				<img src="assets/images/hamburger-menu-icon.svg">
+			</div>
 		</div>
     </header>
 
@@ -72,50 +73,151 @@
 			<li> <a href="#"> menu </a> </li>
 			<li> <a href="#"> about </a> </li>
 		</ul>
-		<hr class="sidebar-divider">
 		<div class="mobile-navbar-btns">
+			<hr class="sidebar-divider">
 			<a class="sign-btn" href="login.html"> sign in </a>
 			<a class="join-btn" href="join-now.html"> join now </a>
+			<hr class="sidebar-divider">
 		</div>
+
+		<!-- ------ just a test for the sidebar scroll ---------->
+		<h1> Scroll test 1 </h1>
+		<h1> Scroll test 2 </h1>
+		<h1> Scroll test 3 </h1>
+		<h1> Scroll test 4 </h1>
+		<h1> Scroll test 5 </h1>
+		<h1> Scroll test 6 </h1>
+		<h1> Scroll test 7 </h1>
+		<h1> Scroll test 8 </h1>
+		<h1> Scroll test 9 </h1>
+		<h1> Scroll test 10 </h1>
+		<!---------------------------------------------------->
+
 	</div>
+
 	<!--------------------------------------------------------->
-    
+	<div class="sidebar-overlay" id="sidebar-overlay"></div>
+	<!--------------------------------------------------------->
+
+	<!-- TODO: WOKING here to fix the get order -->
 	<main>
         <!-- new get order div -->
-        <section class="get-order">
-            <p> It's a great day for coffee </p>
-            <div class="start_order_btn">
-                <a href="#"> Start an order </a>
-            </div>
-        </section>
+		<div class="get-order">
+			<div class="get-order-container">
+				<span class="order-text">It's a great day for coffee</span>
+				<a href="#" class="order-link">Start an order</a>
+			</div>
+		</div>
         
-        <!-- sections -->
-        <section class="promo-row">
-            <div class="promo-image">
-                <img src="assets/images/example1.jpg">
-            </div>
-            <div class="promo-content">
-                <h5>A little bite, a lot of good</h5>
-                <p> For every purchase of Crispy Grilled Cheese on Sourdough at participating locations,
-                    we'll donate the value of two school meals** to support programs that feed kids.
-                    Together we’ll build a brighter future.
-                </p>
-                <div class="order-btn">
-                    <a href="#"> Order now </a>
-                </div>
-            </div>
-        </section>
+        <!-- Static HTML promo -->
+		<!--------------------------------------------------------------------->
+        <div class="promo-container">
+			<div class="right-box">
+				<div class="promo-img">
+					<img src="assets/images/promo-img_1.jpg">
+				</div>
+			</div>
+
+			<div class="left-box">
+				<div class="promo-content">
+					<span class="title">Caramel protein is here</span> <p>
+						Power up with the new Caramel Protein Latte and Caramel
+						Protein Matcha. Handcrafted with Protein-boosted Milk
+						for up to 31 grams of protein per grande.
+						Enjoy hot or iced with sugar-free options.
+					</p>
+					<div class="order-btn">
+						<a href="#"> Order now </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------------------------------->
+        <div class="promo-container reverse">
+			<div class="right-box">
+				<div class="promo-img">
+					<img src="assets/images/promo-img_2.jpg">
+				</div>
+			</div>
+
+			<div class="left-box">
+				<div class="promo-content">
+					<span class="title">But first, free coffee</span> <p>
+						A free handcrafted drink with purchase is all yours during your first week as a Starbucks® Rewards member.*
+					</p>
+					<div class="order-btn reverse">
+						<a href="#"> Order now </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------------------------------->
+		<div class="promo-container">
+			<div class="right-box">
+				<div class="promo-img">
+					<img src="assets/images/promo-img_3.jpg">
+				</div>
+			</div>
+
+			<div class="left-box">
+				<div class="promo-content">
+					<span class="title">Hello, pistachio</span> <p>
+						A beloved flavor is back with the delicious new Pistachio Cortado, 
+						Pistachio Cream Cold Brew and favorite Pistachio Latte.
+						Salty-sweet comfort any time of day.
+					<div class="order-btn">
+						<a href="#"> Order now </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------------------------------->
+		<div class="promo-container reverse">
+			<div class="right-box">
+				<div class="promo-img">
+					<img src="assets/images/promo-img_4.jpg">
+				</div>
+			</div>
+
+			<div class="left-box">
+				<div class="promo-content">
+					<span class="title">Grab a seat. Get free refills.</span> <p>
+						When you stay to enjoy your favorite beverage in the café, refills of hot and iced brewed coffee or tea are on us.**
+					</p>
+					<div class="order-btn reverse">
+						<a href="#"> Order now </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------------------------------->
+		<div class="promo-container">
+			<div class="right-box">
+				<div class="promo-img">
+					<img src="assets/images/promo-img_5.jpg">
+				</div>
+			</div>
+
+			<div class="left-box">
+				<div class="promo-content">
+					<span class="title">Nondairy choices. No extra charge.</span> <p>
+						Try your hot or iced favorite with nondairy milk. Choose from oat, 
+						almond, coconut or soy—for no additional charge.
+					</p>
+					<div class="order-btn">
+						<a href="#"> Order now </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------------------------------------------------------->
     </main>
 
-	<script>
-		const menuBtn = document.getElementById('menuBtn');
-		const sideMenu = document.querySelector('.mobile-sidebar');
-
-		menuBtn.addEventListener('click', () => {
-			sideMenu.classList.toggle('open');
-		});
-	</script>
-
+	<!-- TODO: scripte -->
+	<script src="assets/js/preloader.js"> </script>
+	<script src="assets/js/sidebar.js"> </script>
+	
 </body>
+
 
 </html>

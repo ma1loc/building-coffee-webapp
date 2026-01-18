@@ -3,6 +3,8 @@
 - Add 'Hamburger Menu'
 - Add Root CSS file 'variables'
 
+## Futuerss to add litter on:
+- Preloader
 
 ## Need to know about:
 - display: fixed
@@ -11,3 +13,16 @@
 - position: sticky;
 - z-index: 1000;
 - class-name.open
+- overlay
+
+<!-- >>> TODO: learn about CSS positions <<< -->
+- position: sticky;
+- position: relative;
+- position: absolute;
+- position: inherit;
+- position: fixed;
+- position: static;
+- overflow
+- overflow-y
+- overflow-x
+- overflow: hidden;
