@@ -15,4 +15,6 @@ addEventListener
     submit -> used when a form is sent.
     focus -> happens when the user enters an input.
     blur -> 
+	click -> 
 Dynamic DOM Manipulation
+.classlist .toggle('????')

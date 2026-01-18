@@ -5,24 +5,31 @@
 }
 
 /* ------------------------------------------------------ */
+/* TODO: FIX NAVBAR FOLLOW SCROOL */
+/* TODO: if i move the page just a little and pres the sidebar the top of it is not stick with the navbar */
 .navbar {
     top: 0;
     display: flex;
-    position: sticky;
+    position: relative;
     z-index: 1000;
     height: 10vw;
     min-height: 72px;
     max-height: 100px;
-    width: 100%;
-    padding: 0 10%;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: white;  */
-    background-color: transparent; 
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+	width: auto;
+    justify-content: center;
+    background-color: white; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 /* ------------------------------------------------------ */
+.navbar-container {
+	display: flex;
+	max-width: 1440px;
+	width: 100%	;
+	justify-content: space-between;
+	align-items: center;
+} 
+/* ------------------------------------------------------ */
+
 
 .left-nav-items {
     display: flex;
@@ -100,11 +107,6 @@
     background-color: #333333;
 }
 
-/* Device Type,Max-Width,What happens? */
-/* Mobile (Phones),480px,Everything is 1 column. Font sizes get slightly smaller.
-Tablets (Portrait),768px,Items might go from 1 column to 2. Navbar might hide.
-Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
-
 /* TODO: Hamburger Menu*/
 .sidebar-button {
 	display: none;
@@ -114,13 +116,37 @@ Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
 	display: none;
 }
 
+/* ------------------------------------------------------------ */
+.sidebar-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 998;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar-overlay.active {
+	display: block;
+	opacity: 1;
+}
+/* ------------------------------------------------------------ */
+
+/* responsive for navbar */
+@media (max-width: 1520px) {
+	.navbar {
+		padding: 0 40px;
+	}
+}
+
+/* responsive for sidebar */
 @media (max-width: 768px) {
 
 	/* ---------------------------------------------- */
-
-	.navbar {
-	    padding: 0 5%;
-	}
 
     .right-nav-items, .left-nav-items .menu  {
         display: none;
@@ -131,24 +157,27 @@ Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
 	}
 
 	/* ---------------------------------------------- */
+	/* TODO: even the sidebar open, i can intract with the body background */
+
     .mobile-sidebar {
 		display: flex;
 		position: fixed;
 		z-index: 999;
 		flex-direction: column;
-		/* just a test */
-		/* right: 0;  */
 		right: -100%;
 		height: calc(100vh - 72px);
 		width: 70vw;
 		padding-top: 32px;
 		background-color: white;
 
-		transition: right 0.3s ease-in-out; /* Smooth slide */
+		overflow-y: auto;
+		padding-bottom: 50px;
+
+		transition: right 0.3s ease-in-out;
         box-shadow: -5px 0 10px rgba(0,0,0,0.1);
 	}
 
-	/* what is class-name.open  */
+	/* TODO: class-name.open  */
 	.mobile-sidebar.open {
         right: 0;
     }
@@ -175,13 +204,12 @@ Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
 	.sidebar-divider {
 		border: none;
 		height: 2px;
-		margin: 32px auto;
-		width: 85%;
-		opacity: 10%;
+		margin: 16px auto;
+		width: 100%;
+		opacity: 0.2;
 		background-color: black; 
 	}
 	/* ---------------------------------------------- */
-	
 
 	.mobile-navbar-btns {
 		display: flex;
@@ -191,6 +219,15 @@ Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
 		gap: 20px;
 	}
 
+	/* style randome content to test sidebar scroll  */
+	.mobile-sidebar h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 30px;
+		font-family: var(--based-font);
+	}
 	/* ---------------------------------------------- */
 
 }
