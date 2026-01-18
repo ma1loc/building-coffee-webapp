@@ -1,50 +1,71 @@
-/* based color B40000 */
-
 * {
-    /* why ? */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* >>> header style <<< */
+/* ------------------------------------------------------ */
 .navbar {
+    top: 0;
     display: flex;
-    height: 100px;
+    position: sticky;
+    z-index: 1000;
+    height: 10vw;
+    min-height: 72px;
+    max-height: 100px;
+    width: 100%;
+    padding: 0 10%;
     align-items: center;
+    justify-content: space-between;
+    /* background-color: white;  */
+    background-color: transparent; 
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+/* ------------------------------------------------------ */
 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.left-nav-items {
+    display: flex;
+    align-items: center;
 }
 
-.navbar .menu ul, li a {
+.menu ul {
     display: flex;
     list-style: none;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Montserrat, sans-serif;
-    text-transform: uppercase;
     color: black;
-    padding: 0 20px;
-    gap: 10px;
-
+    gap: 50px;
 }
 
-.navbar .logo img {
-    height: 50px;
-    padding: 0 80px;
-    cursor: pointer;
+.menu ul a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--based-font);
 }
 
-.navbar .navbar_btns {
+.left-nav-items .logo {
     display: flex;
-    margin-left: auto;
-    padding: 0 10%;
-    gap: 20px;
+    align-items: center;
     
+    height: 10vw;
+    min-height: 72px;
+    max-height: 100px;
+    width: 100px;
 }
 
-.navbar .navbar_btns .sign_btn, .join_btn {
+.left-nav-items .logo img {
+    width: 5vw;
+    min-width: 40px;
+    max-width: 50px;
+}
+
+.right-nav-items .navbar-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.sign-btn, .join-btn {
     padding: 5px 10px;
     text-decoration: none;
     font-size: 14px;
@@ -55,27 +76,121 @@
     font-family: Montserrat, sans-serif;
 }
 
-.navbar .navbar_btns .sign_btn {
+.sign-btn {
     color: black;
     background-color: white;
 }
 
-.navbar .navbar_btns .join_btn {
+.join-btn {
     color: white;
     background-color: black;
 }
 
-.navbar .menu ul, li a:hover {
-    color: #B40000;
+
+/* buttons hovering style */
+.menu ul a:hover {
+    color: var(--based-color);
 }
 
-/* hovering */
-
-.navbar .navbar_btns .sign_btn:hover {
+.sign-btn:hover {
     background-color: #E0E0E0;
 }
 
-.navbar .navbar_btns .join_btn:hover {
+.join-btn:hover {
     background-color: #333333;
 }
 
+/* Device Type,Max-Width,What happens? */
+/* Mobile (Phones),480px,Everything is 1 column. Font sizes get slightly smaller.
+Tablets (Portrait),768px,Items might go from 1 column to 2. Navbar might hide.
+Laptops/Desktops,1024px+,Full layout. Horizontal menus. Side-by-side content. */
+
+/* TODO: Hamburger Menu*/
+.sidebar-button {
+	display: none;
+}
+
+.mobile-sidebar {
+	display: none;
+}
+
+@media (max-width: 768px) {
+
+	/* ---------------------------------------------- */
+
+	.navbar {
+	    padding: 0 5%;
+	}
+
+    .right-nav-items, .left-nav-items .menu  {
+        display: none;
+    }
+
+	.sidebar-button {
+		display: block;
+	}
+
+	/* ---------------------------------------------- */
+    .mobile-sidebar {
+		display: flex;
+		position: fixed;
+		z-index: 999;
+		flex-direction: column;
+		/* just a test */
+		/* right: 0;  */
+		right: -100%;
+		height: calc(100vh - 72px);
+		width: 70vw;
+		padding-top: 32px;
+		background-color: white;
+
+		transition: right 0.3s ease-in-out; /* Smooth slide */
+        box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+	}
+
+	/* what is class-name.open  */
+	.mobile-sidebar.open {
+        right: 0;
+    }
+
+	/* ---------------------------------------------- */
+
+	
+	.mobile-sidebar ul {
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+	.mobile-sidebar ul li {
+		padding: 16px 32px;
+		
+	}
+	
+	.mobile-sidebar ul a {
+		text-transform: capitalize;
+		font-size: large;
+	}
+
+	/* ---------------------------------------------- */
+	.sidebar-divider {
+		border: none;
+		height: 2px;
+		margin: 32px auto;
+		width: 85%;
+		opacity: 10%;
+		background-color: black; 
+	}
+	/* ---------------------------------------------- */
+	
+
+	.mobile-navbar-btns {
+		display: flex;
+		padding: 16px 32px;
+		text-align: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	/* ---------------------------------------------- */
+
+}
