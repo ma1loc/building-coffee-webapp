@@ -5,6 +5,8 @@
 
 ## Futuerss to add litter on:
 - Preloader
+- animation sidebar button
+- footer
 
 ## Need to know about:
 - display: fixed
@@ -26,3 +28,4 @@
 - overflow-y
 - overflow-x
 - overflow: hidden;
+- clamp

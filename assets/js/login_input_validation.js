@@ -1,5 +1,5 @@
 // This is my first JS // 
-// TODO: improvement's latter on
+// TODO: improvement's later on
 
 const input_mail = document.getElementById("user-email")
 const input_pass = document.getElementById("user-pass")
