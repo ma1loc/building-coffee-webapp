@@ -7,45 +7,42 @@
     <title>Coffeebucks</title>
 
     <!-- icon -->
-    <link rel="icon" href="assets/images/fav_icon.png" type="image/png">
+    <link rel="icon" href="assets/media/logos/fav_icon.png" type="image/png">
     
 	<!-- root css config varables -->
 	<link rel="stylesheet" href="assets/css/variables.css">
+
     <!-- css stylesheets -->
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/promo-row.css">
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet"> 
-
-	<!-- JS -->
-	<!-- ........ -->
 </head>
 
 <body>
 	<!-- preloader -->
 	<div id="preloader" class="preloader"></div>
 
-    <!-- >> header << -->
+	<!------------------------ HEADER ----------------------->
     <header class="navbar">
         <!-- menu div -->
-        <!-- here will create the navbar content by slip 'left-nav-items' && 'right-nav-items' -->
         <div class="navbar-container">
 			<div class="left-nav-items">
 				<!-- logo div -->
-				<div class="logo" alt="logo">
+				<div class="logo-box" alt="logo">
 					<a href="index.html">
-						<img src="assets/images/logo.svg">
+						<img src="assets/media/logos/logo.svg">
 					</a>
 				</div>
 				
 				<div class="menu">
 					<ul>
 						<li> <a href="index.html"> home </a> </li>
-						<li> <a href="#"> menu </a> </li>
-						<li> <a href="#"> about </a> </li>
+						<li> <a href="menu.html"> menu </a> </li>
+						<li> <a href="about.html"> about </a> </li>
 					</ul>
 				</div>
 			</div>
@@ -60,18 +57,18 @@
 
 			<!-- Hamburger Menu Button -->
 			<div class="sidebar-button" id="menu-btn">
-				<img src="assets/images/hamburger-menu-icon.svg">
+				<img src="assets/media/icons/hamburger-menu-icon.svg">
 			</div>
 		</div>
     </header>
 
-	<!-- sidebar Menu -->
+	<!-- Mobile responsive -> sidebar Menu -->
 	<!--------------------------------------------------------->
 	<div class="menu mobile-sidebar">
 		<ul>
 			<li> <a href="index.html"> home </a> </li>
-			<li> <a href="#"> menu </a> </li>
-			<li> <a href="#"> about </a> </li>
+			<li> <a href="menu.html"> menu </a> </li>
+			<li> <a href="about.html"> about </a> </li>
 		</ul>
 		<div class="mobile-navbar-btns">
 			<hr class="sidebar-divider">
@@ -80,7 +77,7 @@
 			<hr class="sidebar-divider">
 		</div>
 
-		<!-- ------ just a test for the sidebar scroll ---------->
+		<!------- "Remove later"just a test for the sidebar scroll ---------->
 		<h1> Scroll test 1 </h1>
 		<h1> Scroll test 2 </h1>
 		<h1> Scroll test 3 </h1>
@@ -92,14 +89,16 @@
 		<h1> Scroll test 9 </h1>
 		<h1> Scroll test 10 </h1>
 		<!---------------------------------------------------->
-
 	</div>
+	<!--------------------------------------------------------->
+
 
 	<!--------------------------------------------------------->
 	<div class="sidebar-overlay" id="sidebar-overlay"></div>
 	<!--------------------------------------------------------->
-
-	<!-- TODO: WOKING here to fix the get order -->
+	
+	
+	<!------------------------ MAIN ----------------------->
 	<main>
         <!-- new get order div -->
 		<div class="get-order">
@@ -114,7 +113,7 @@
         <div class="promo-container">
 			<div class="right-box">
 				<div class="promo-img">
-					<img src="assets/images/promo-img_1.jpg">
+					<img src="assets/media/promos/promo-img_1.jpg">
 				</div>
 			</div>
 
@@ -136,7 +135,7 @@
         <div class="promo-container reverse">
 			<div class="right-box">
 				<div class="promo-img">
-					<img src="assets/images/promo-img_2.jpg">
+					<img src="assets/media/promos/promo-img_2.jpg">
 				</div>
 			</div>
 
@@ -155,7 +154,7 @@
 		<div class="promo-container">
 			<div class="right-box">
 				<div class="promo-img">
-					<img src="assets/images/promo-img_3.jpg">
+					<img src="assets/media/promos/promo-img_3.jpg">
 				</div>
 			</div>
 
@@ -175,7 +174,7 @@
 		<div class="promo-container reverse">
 			<div class="right-box">
 				<div class="promo-img">
-					<img src="assets/images/promo-img_4.jpg">
+					<img src="assets/media/promos/promo-img_4.jpg">
 				</div>
 			</div>
 
@@ -194,7 +193,7 @@
 		<div class="promo-container">
 			<div class="right-box">
 				<div class="promo-img">
-					<img src="assets/images/promo-img_5.jpg">
+					<img src="assets/media/promos/promo-img_5.jpg">
 				</div>
 			</div>
 
@@ -212,6 +211,10 @@
 		</div>
 		<!--------------------------------------------------------------------->
     </main>
+
+	<footer>
+
+	</footer>
 
 	<!-- TODO: scripte -->
 	<script src="assets/js/preloader.js"> </script>
