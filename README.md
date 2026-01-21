@@ -1,6 +1,6 @@
 # building-coffee-webapp
 
-### Just for educational purposes, I used HTML & CSS to create a coffee shop inspired by Starbucks (work in progress)
+### Just for educational purposes, I used HTML, CSS and JS to create a coffee shop inspired by Starbucks (work in progress)
 
 ### Live Deployment
 You can check the website deployed on **GitHub Pages** here:
