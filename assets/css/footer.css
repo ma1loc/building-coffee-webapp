@@ -1,0 +1,30 @@
+/* 
+    social media
+    navbar content
+    cpoyraght
+*/
+
+.footer-container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer-box {
+    margin: 0 100px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 32px;
+    gap: 20px;
+}
+
+.social-media img {
+    width: 32px;
+}
