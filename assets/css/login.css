@@ -6,26 +6,17 @@
     margin: 0;
 }
 
-/* >>> login page navbar */
 header .navbar {
     display: flex;
     height: 100px;
     padding: 0 40px;
     align-items: center;
-
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 header .navbar .navbar_logo img {
     height: 50px;
 }
-
-/* ---------------------------------------------------------------------------- */
-
-/* 
-	flex-direction: column; ????
-*/
 
 .login-page {
     display: flex;
@@ -104,7 +95,6 @@ header .navbar .navbar_logo img {
     padding-left: 10px;
     font-family: "Noto Sans", sans-serif;
 }
-
 
 .keep-me-signed-in .details-msg-btn {
 	border: 0;
@@ -221,5 +211,3 @@ header .navbar .navbar_logo img {
     margin-right: 5px;
     width: 20px;
 }
-/* ---------------------------------- */
-
