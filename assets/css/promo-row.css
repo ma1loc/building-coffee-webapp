@@ -39,7 +39,6 @@ body.no-scroll {
 	-webkit-tap-highlight-color: transparent;
 }
 
-/* >>> main <<< */
 main > * {
     margin-bottom: 25px;
 }
@@ -49,6 +48,28 @@ main {
 	margin: 0 auto;
 	width: 100%;
 }
+
+/*  ---------------- Back to Top --------------------  */
+
+.back-to-top {
+	display: none;
+	/* display: flex; */
+	max-width: 1440px;
+	width: 100%;
+	position: fixed;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 20px;
+	bottom: 0;
+}
+
+.back-to-top img {
+	width: 50px;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+/*  ----------------------------------------------------  */
 
 .get-order {
     display: flex;
