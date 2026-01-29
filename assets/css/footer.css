@@ -32,16 +32,6 @@
     padding: 20px 0;
 }
 
-.cup-of-coffee {
-    display: flex;
-    justify-content: center;
-}
-
-.cup-of-coffee img {
-    max-width: 100%;
-    height: auto;
-}
-
 .social-media {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +58,7 @@ hr {
 .copyright-notice {
     display: flex;
     font-family: var(--parag-font);
-    font-size: clamp(15px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 15px);
     padding: 20px 0;
 }
 
