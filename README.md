@@ -20,7 +20,7 @@ You can check the website deployed on **GitHub Pages** here:
 
 ---
 
-**Nginx** = Web Server   
+**Nginx** = Web Server (serve web content)
 **Node.js** = Backend runtime   
 **MySQL** = Database   
 
