@@ -4,18 +4,25 @@
     outline: none;
     padding: 0;
     margin: 0;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
-header .navbar {
+.navbar {
+    top: 0;
     display: flex;
-    height: 100px;
-    padding: 0 40px;
+    position: relative;
+	height: clamp(64px, 10vw, 90px);
+	width: auto;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-header .navbar .navbar_logo img {
-    height: 50px;
+.navbar_logo img {
+	width: auto;
+    height: clamp(30px, 6vw, 50px);
+    padding-left: 20px;
 }
 
 .login-page {
@@ -29,7 +36,7 @@ header .navbar .navbar_logo img {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    font-family: SoDo Sans SemiBold, sans-serif;
+    font-family: var(--based-font);
 }
 
 .sign-msg {
@@ -61,7 +68,7 @@ header .navbar .navbar_logo img {
 
     font-size:medium;
     font-weight: lighter;
-    font-family: SoDo Sans SemiBold, sans-serif;
+    font-family: var(--based-font);
 }
 
 .sign-in-box .input-group {
@@ -76,7 +83,7 @@ header .navbar .navbar_logo img {
     font-size: 19px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: SoDo Sans SemiBold, sans-serif;
+    font-family: var(--based-font);
     background-color: transparent;
 }
 
@@ -93,7 +100,7 @@ header .navbar .navbar_logo img {
     display: flex;
     font-size: 700;
     padding-left: 10px;
-    font-family: "Noto Sans", sans-serif;
+    font-family: var(--basic-font);
 }
 
 .keep-me-signed-in .details-msg-btn {
@@ -112,7 +119,7 @@ header .navbar .navbar_logo img {
 	padding: 5px 0;
 	color: #b40000;
 	font-size: medium;
-	font-family: SoDo Sans SemiBold, sans-serif;
+	font-family: var(--based-font);
 }
 
 .login-form {
@@ -132,9 +139,9 @@ header .navbar .navbar_logo img {
     font-size: large;
     font-weight: bold;
     padding: 18px 24px;
-	margin: 10px;
+	margin-top: 25px;
     align-self: flex-end;
-    font-family: SoDo Sans SemiBold, sans-serif;
+    font-family: var(--based-font);
     box-shadow: 0 5px 10px hsl(0deg 0% 0% / 0.3);
 }
 
@@ -159,7 +166,7 @@ header .navbar .navbar_logo img {
     padding-bottom: 10px;
 	text-transform: uppercase;
 	font-size: medium;
-    font-family: "SoDo Sans SemiBold", sans-serif;
+    font-family: var(--based-font)
 }
 
 .join-now p {
@@ -177,7 +184,7 @@ header .navbar .navbar_logo img {
     font-weight: bold;
     padding: 10px 15px;
     background-color: transparent;
-    font-family: "SoDo Sans SemiBold", sans-serif;
+    font-family: var(--based-font);
 }
 
 .join-now .join-now-btn:hover {
@@ -185,8 +192,8 @@ header .navbar .navbar_logo img {
 }
 
 .input-group label {
-	font-size: large;
-    font-family: "SoDo Sans SemiBold", sans-serif;
+	/* font-size: large; */
+    font-family: var(--based-font);
 }
 
 .input-group label span {
@@ -204,10 +211,27 @@ header .navbar .navbar_logo img {
     padding-top: 5px;
     padding-left: 20px;
     color: #b40000;
-    font-family: "SoDo Sans SemiBold", sans-serif;
+    font-family: var(--based-font);
 }
 
 .error-msg img {
     margin-right: 5px;
     width: 20px;
+}
+
+.password_recovery a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 720px) {
+    .box {
+        box-shadow: none;
+        width: clamp(100px, 95vw, 650px);
+        height: auto;
+    }
+
+    .join-now-box {
+        width: clamp(100px, 95vw, 650px);
+    }
 }

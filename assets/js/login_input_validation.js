@@ -8,8 +8,6 @@ const label_pass = document.getElementById("label-password")
 const mail_error_msg = document.getElementById("mail-error-msg")
 const pass_error_msg = document.getElementById("pass-error-msg")
 
-// const submit_button = document.getElementById("huhu")
-
 const form = document.querySelector(".login-form");
 
 form.addEventListener("submit", (event) => {
