@@ -16,6 +16,12 @@ You can check the website deployed on **GitHub Pages** here:
 
 **HTML** = Structure of the website  
 **CSS** = Styling the website  
-**JS** = Functionality of the website (NOT used yet)
+**JS** = Functionality of the website (in progress)
+
+---
+
+**Nginx** = Web Server   
+**Node.js** = Backend runtime   
+**MySQL** = Database   
 
 ---
