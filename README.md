@@ -3,8 +3,8 @@
 ### Just for educational purposes, I used HTML, CSS and JS to create a coffee shop inspired by Starbucks (work in progress)
 
 ### Live Deployment
-You can check the website deployed on **GitHub Pages** here:
-<a href="https://ma1loc.github.io/building-coffee-webapp/"
+You can check the UI/UX deployed on **GitHub Pages** here:
+<a href="https://ma1loc.github.io/building-coffee-webapp/front-end/"
    target="_blank"
    rel="noopener noreferrer">
    here
