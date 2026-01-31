@@ -12,9 +12,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet"> 
-    
-    <script src="assets/js/login_input_validation.js" defer ></script>
+	<link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+	
+	<!-- root css config varables -->
+	<link rel="stylesheet" href="assets/css/variables.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <div class="navbar">
             <div class="navbar_logo">
                 <a href="index.html">
-                    <img src="assets/images/logo.svg">
+                    <img src="assets/media/logos/logo.svg">
                 </a>
             </div>
         </div>
@@ -48,7 +49,7 @@
 						<!-- Dynamic Form Validation message -->
 						<div class="error-msg" id="mail-error-msg">
 							<div class="error_box">
-								<img src="assets/images/at-solid-full.svg">
+								<img src="assets/media/icons/at-solid-full.svg">
 								<span> Enter an email/username. </span>
 							</div>
 						</div>
@@ -61,7 +62,7 @@
 						<!-- Dynamic Form Validation message -->
 						<div class="error-msg" id="pass-error-msg">
 							<div class="error_box">
-								<img src="assets/images/key-solid-full.svg">
+								<img src="assets/media/icons/key-solid-full.svg">
 								<span> Enter a password. </span>
 							</div>
 						</div>
@@ -71,13 +72,13 @@
 					<div class="keep-me-signed-in">
 							<input type="checkbox" id="scales" name="scales" checked />
 							<label for="scales"><p>Keep me signed in.</p></label>
-							<button class="details-msg-btn"> Details </button>
+							<button type="button" class="details-msg-btn"> Details </button>
 					</div>
 					<div class="password_recovery">
 						<a href="#">Forgot your username?</a>
 						<a href="#">Forgot your password?</a>
 					</div>
-					<button type="submit" id="huhu" class="sign-in">Sign in</button>	
+					<button type="submit" class="sign-in">Sign in</button>
 				</form>
 				<!-- end -->
 			</div>
@@ -92,5 +93,7 @@
 			</div>
 		</div>
     </main>
+
+	<script src="assets/js/login_input_validation.js"></script>
 </body>
 </html>
